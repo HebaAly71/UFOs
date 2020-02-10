@@ -19,7 +19,8 @@
             "type": "node",
             "request": "launch",
             "name": "Node JS Debug",
-            "program": "${file}"
+            "program": "/Users/hebamaly/UFOs/static/js/app copy.js",
+            "runtimeExecutable": "/usr/local/bin/node"
         }
     ]
 }
