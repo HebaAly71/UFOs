@@ -21,27 +21,19 @@ function buildTable(data) {
   });
 }
 
-
 // Keep track of all filters
 var filters = [];
-var keyword_pairs = [{ "id": "#datetime", "key": "datetime" },
-{ "id": "#city", "key": "city" },
-{ "id": "#state", "key": "state" },
-{ "id": "#country", "key": "country" },
-{ "id": "#shape", "key": "shape" },]
 function handleClick() {
   let date = d3.select("#datetime").property("value");
   let city = d3.select("#city").property("value");
   let state = d3.select("#state").property("value");
   let country = d3.select("#country").property("value");
   let shape = d3.select("#shape").property("value");
-  //let filteredData = tableData;
   filters = [];
   if (date) {
     //console.log(date);
     filters.push({"id":"datetime", "value":date});
-    //filteredData = filteredData.filter(row => row.datetime === date);
-
+    
   } else {
     filters = filters;
   }
@@ -75,7 +67,7 @@ function filterTable() {
     console.log(el);
     filteredData = filteredData.filter(row => row[el.id] === el.value);
   }
-
+  console.log(filteredData);
   buildTable(filteredData);
 }
 
