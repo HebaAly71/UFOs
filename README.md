@@ -142,3 +142,8 @@ Call the function filterTable, which we will explain later, in order to return t
     // Build the table when the page loads
     
     buildTable(tableData);
+
+
+### Recommendation:
+
+   We can add more data visualizations of the table we have like a bar graph of the number of findings we had in different states or cities or even in different years so we can anlayze and see if there is any relation betweenthe number of findings and a specific time of the year, or a specific location.
